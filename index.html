@@ -6,6 +6,16 @@
 </head>
 
 <body ng-controller="MainCtrl as vm">
+    <h1>Flickr Search</h1>
+    <form ng-submit="vm.submitSearch()">
+        <input type="text" ng-model="vm.searchTerm" placeholder="Enter your search term here...">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="searchFeedback"></div>
+
+    <div id="resultsDiv"></div>
+    
     <script src='index.js'></script>
 </body>
 
