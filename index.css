@@ -1,3 +1,21 @@
 body{
     text-align: center;
 }
+
+.resultImg{
+    display: inline-block;
+    height: 100px;
+}
+
+.resultImg.ng-enter, .resultImg.ng-leave {
+    transition: .5s;
+}
+
+.resultImg.ng-enter, .resultImg.ng-leave.ng-leave-active{
+    width: 0%;
+}
+
+.resultImg.ng-leave,
+.resultImg.ng-enter.ng-enter-active {
+    width:25%;
+}
